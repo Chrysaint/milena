@@ -1,0 +1,7 @@
+.footer__text {
+    margin-top: 75px;
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--font-400);
+    color: var(--secondary-color);
+}

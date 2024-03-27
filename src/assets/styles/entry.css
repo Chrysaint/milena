@@ -1,0 +1,149 @@
+.entry__wrapper {
+    margin-inline: auto;
+    max-width: 500px;
+}
+
+.entry__form__title {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.entry__item {
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+}
+
+.entry__item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entry__item__heading {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.entry__item__button {
+    background: none;
+    border: none;
+}
+
+.entry__item__button > svg {
+    pointer-events: none;
+    transition: transform 350ms ease-in;
+}
+
+.entry__item__header[data-dropped="true"] > .entry__item__button > svg {
+    transform: rotate(-180deg);
+}
+
+.entry__item__header[data-dropped="false"] > .entry__item__button > svg {
+    transform: rotate(0deg);
+}
+
+.entry__item__footer-wrapper {
+    display: grid;
+    transition: all 500ms ease-in-out;
+}
+
+.entry__item__footer-wrapper[data-dropped="true"] {
+    margin-top: 20px;
+    grid-template-rows: 1fr;
+}
+
+.entry__item__footer-wrapper[data-dropped="false"] {
+    margin-top: 0px;
+    grid-template-rows: 0fr;
+}
+
+.entry__item__footer-list {
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+.entry__item__footer-item + .entry__item__footer-item {
+    margin-top: 12px;
+}
+
+.entry__form__btns {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.entry__form__btn {
+    display: block;
+    margin-top: 16px;
+    margin-inline: auto;
+}
+
+.entry__form__btns > .entry__form__btn {
+    margin: 0;
+}
+
+.specialist__form {
+    display: none;
+}
+
+.specialist__item {
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+}
+
+.specialist__item__input {
+    margin-right: 8px;
+}
+
+.period__form {
+    display: none;
+}
+
+.period__form__date {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.period__form__date__text {
+    font-weight: 500;
+}
+
+.period__form__datepicker {
+    padding: 12px;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+}
+
+.period__form__time-list {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60px);
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.period__form__time-block {
+    padding: 4px 8px;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Fira Sans Extra Condensed';
+    transition: all 100ms linear;
+    cursor: pointer;
+}
+
+input[name="time-input"]:checked + .period__form__time-block {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.period__form__time-block_inactive {
+    background-color: #dbdbdb;
+    filter: grayscale(0.75);
+    pointer-events: none;
+    color: #8d8d8d;
+}
