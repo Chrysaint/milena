@@ -79,8 +79,6 @@ $entriesResult = mysqli_query($link, $entriesQuery);
     <?php
     include_once('./src/components/footer.php')
     ?>
-    <script type="module" src="./src/assets/js/countCartSummary.js"></script>
-    <script type="module" src="./src/assets/js/dropDown.js"></script>
 </body>
 
 </html>

@@ -20,3 +20,4 @@ if (empty($userData) || $pass != $userData['UsersPassword']) {
     ]);
     return;
 }
+?>

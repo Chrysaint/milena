@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/assets/styles/styles.css">
-    <title>Антикварная лавка "Рамир"</title>
-</head>
+<?php
+    include("./src/components/head.php");
+?>
 <body>
     <?php
         include_once('./src/components/header.php')
@@ -32,6 +29,5 @@
     <?php
         include_once('./src/components/footer.php')
     ?>
-    <script type="module" src="./src/assets/js/countCartSummary.js"></script>
 </body>
 </html>

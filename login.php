@@ -39,8 +39,6 @@ include_once('./src/components/head.php')
     include_once('./src/components/footer.php')
     ?>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
-    <script type="module" src="https://unpkg.com/imask"></script>
-    <script type="module" src="./src/assets/js/phoneMask.js"></script>
     <script type="module" src="./src/assets/js/forms.js"></script>
 </body>
 
